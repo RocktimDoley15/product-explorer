@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Explorer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External JavaScript -->
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="logo">
+            <h2>Product Explorer</h2>
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#footer">About</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <h1>
+                    Discover Amazing
+                    <span>Products</span>
+                </h1>
+
+                <p>
+                    Explore our collection of products.
+                    Search, filter and find your favourite items.
+                </p>
+
+                <a href="#products" class="hero-btn">
+                    Explore Products
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCTS SECTION ================= -->
+
+        <section class="products-section" id="products">
+
+            <div class="section-heading">
+
+                <h2>Explore Our Products</h2>
+
+                <p>
+                    Find the perfect product for you.
+                </p>
+
+            </div>
+
+
+            <!-- SEARCH AND FILTER -->
+
+            <div class="controls">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products by name..."
+                >
+
+                <select id="categoryFilter">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                </select>
+
+                <button id="resetButton" type="button">
+                    Reset
+                </button>
+
+            </div>
+
+
+            <!-- LOADING / ERROR MESSAGE -->
+
+            <p id="message">
+                Loading products...
+            </p>
+
+
+            <!-- PRODUCT CARDS WILL BE DISPLAYED HERE -->
+
+            <div
+                class="product-grid"
+                id="productContainer">
+            </div>
+
+
+            <!-- NO RESULTS MESSAGE -->
+
+            <div id="noResults" class="hidden">
+
+                <h3>No Products Found!</h3>
+
+                <p>
+                    Try searching with another product name
+                    or selecting a different category.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= PRODUCT DETAILS MODAL ================= -->
+
+    <div id="productModal" class="modal hidden">
+
+        <div class="modal-content">
+
+            <button
+                id="closeModal"
+                class="close-button"
+                type="button">
+                &times;
+            </button>
+
+            <div id="modalDetails">
+
+                <!-- Product details will appear here -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer" id="footer">
+
+        <h3>Product Explorer</h3>
+
+        <p>
+            Discover products from around the world.
+        </p>
+
+        <p class="copyright">
+            &copy; 2026 Product Explorer.
+            Built using HTML, CSS and JavaScript.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
